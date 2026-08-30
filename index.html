@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Architecture & Semantic HTML5</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Web Architecture & Semantic HTML5</h1>
+
+    <nav>
+        <a href="#architecture">Web Architecture</a> |
+        <a href="#multimedia">Multimedia</a> |
+        <a href="#form">Form Validation</a>
+    </nav>
+
+    <hr>
+
+    <section id="architecture">
+        <article>
+            <h2>1. Web Architecture Concepts</h2>
+
+            <h3>Client-Server Model</h3>
+            <p>
+                The <strong>Client</strong> (your browser) sends a request,
+                and the <strong>Server</strong> returns the web page response.
+            </p>
+        </article>
+
+        <article>
+            <h3>DNS (Domain Name System)</h3>
+            <p>
+                Translate human-friendly domain names
+                (like <small>example.com</small>) into numeric IP address.
+            </p>
+        </article>
+
+        <article>
+            <h3>HTTP vs. HTTPS</h3>
+            <p>
+                <strong>HTTP</strong> sends data in plain text,
+                while <strong>HTTPS</strong> encrypts data securely using SSL/TLS.
+            </p>
+        </article>
+    </section>
+
+    <hr>
+
+    <section id="multimedia">
+        <h2>2. HTML5 Multimedia</h2>
+
+        <h3>Audio Tags:</h3>
+
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Video Tag:</h3>
+
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <hr>
+
+    <section id="form">
+        <h2>HTML5 Form & Validation</h2>
+
+        <form>
+            <label for="fullname">Full Name (Required):</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="email">Email Address (Native Validation):</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="protocol">Which protocol uses encryption?</label><br>
+
+            <select id="protocol" name="protocol" required>
+                <option value="" disabled selected>Select an Option</option>
+                <option value="http">HTTP</option>
+                <option value="https">HTTPS</option>
+                <option value="ftp">FTP</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
